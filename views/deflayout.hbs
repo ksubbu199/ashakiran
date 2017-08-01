@@ -1,0 +1,186 @@
+<html>
+<head>
+  <title>{{title}} | AshaKiran</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+  <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" media="all">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" rel="stylesheet" media="all">
+  <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+
+
+</head>
+<style>
+.margin-top{
+  margin-top: 50px;
+}
+
+#mainImage .card-block{
+  background-color: green;
+  color:white;
+}
+
+#mainImage .card-block h3{
+  text-align: center;
+}
+
+.bold{
+  font-weight: bold;
+}
+
+.theme-orange-bg{
+  background-color: orange;
+  color:white;
+}
+
+.no-bg{
+  background-color: transparent;
+}
+
+.navbar-inverse .navbar-nav .nav-link{
+  color:black;
+}
+
+.navbar-inverse .navbar-nav .nav-link:hover,.navbar-inverse .navbar-nav .nav-link:active{
+  color:orange;
+}
+
+
+.nav-item{
+  border-top:    1px solid green;
+  border-right:  1px solid green;
+  border-left: 1px solid green;
+  margin: 0% 0.5%;
+}
+
+.main-nav{
+  margin-bottom: 0;
+  padding-bottom: 0
+}
+
+.navbar-nav {
+    float:none;
+    margin:0 auto;
+    display: block;
+    text-align: center;
+    width: 100%;
+}
+
+.navbar-nav > li {
+    display: inline-block;
+    width: 15%;
+    float:none;
+}
+
+.body{
+  min-height: 500px;
+  border: 1px solid green;
+}
+.posted{
+  padding: 2%;
+}
+
+.no-padding{
+  padding: 0;
+}
+
+.no-margin{
+  margin:0;
+}
+
+.batch-table{
+  display: none;
+}
+.active.batch-table{
+  display: block;
+}
+.sideNavVol>.list-group> .list-group-item:hover{
+  cursor: pointer;
+  background-color:orange;
+  color:white;
+}
+
+.sideNavVol .list-group-item.active{
+  background-color: green;
+}
+
+.sideNavVol>.list-group> .list-group-item{
+
+}
+
+
+.width47{
+  flex:0 0 14.2857%;
+  -webkit-box-flex:0 0 14.2857%;
+  -ms-flex:0 0 14.2857%;
+  -webkit-flex:0 0 14.2857%;
+}
+
+#schedule tr>td:nth-child(odd){
+  background-color: green;
+  color:white;
+}
+</style>
+<body>
+
+  <div class="container-fluid">
+    <div class="margin-top"></div>
+
+    <div class="row">
+      <div class="col-md-8 offset-md-1">
+        <div class="container" >
+          <center>
+            <img src="/images/ashakiranimg.jpeg" style="width:30%;">
+          </center>
+        </div>
+
+        <nav class="navbar navbar-toggleable-sm navbar-fixed-top navbar-inverse no-bg main-nav">
+        <div class="container">
+            <ul class="nav navbar-nav mx-auto">
+                <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Volunteers</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Register</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Schedule</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Email&nbsp;Us</a>
+                </li>
+            </ul>
+        </div>
+      </nav>
+
+      <div class="body">
+        {{{block "body"}}}
+      </div>
+
+      </div>
+      <div class="col-md-2" style="margin-right:8.33%;margin-top:200px;">
+        <div class="card">
+          <div class="card-header theme-orange-bg">
+            Class Hours Notice:
+          </div>
+         <div class="card-block">
+            <h4 class="card-title ">Social Class</h4>
+            <p class="card-text">
+              <span class="bold">Time:</span>4:30 PM - 5:30 PM
+              <span class="bold">By:</span>Saujanya Reddy
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
